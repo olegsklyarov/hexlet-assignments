@@ -1,0 +1,6 @@
+<h1>Welcome</h1>
+<% if @random_article %>
+  <p>See random <%= link_to 'article', article_path(@random_article.id) %>.</p>
+<% else %>
+  <p>Please add some articles, or run rake db:seed</p>
+<% end %>

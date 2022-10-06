@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+theory:
+  name: See David's theory
+  description: See and understand David's lecture about Relations
+  user: oleg
+  status: done
+
+practice:
+  name: Practice relations
+  description: Download homework and practice relations
+  user: oleg
+  status: in_progress
+
+check:
+  name: Check homework
+  description: Check homework
+  user: vasilisa
+  status: new

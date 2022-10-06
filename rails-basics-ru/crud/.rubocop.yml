@@ -1,0 +1,14 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - examples/**/*
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false

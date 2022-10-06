@@ -1,0 +1,19 @@
+= content_for :title do
+  = @task.name
+
+- unless @task.description.empty?
+  h3 = 'Description'
+  .mb-4 = @task.description
+
+.mb-4
+  b = 'Author: '
+  = @task.user.name
+
+.mb-4
+  span.badge.bg-primary = @task.status.name
+
+hr
+
+.d-flex
+  = link_to 'Edit', edit_task_path(@task), class: 'btn btn-outline-primary me-2'
+  = link_to 'Back', :back, class: 'btn btn-outline-primary'

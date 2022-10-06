@@ -1,0 +1,16 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - examples/**/*
+    - config/initializers/simple_form_bootstrap.rb
+    - config/initializers/simple_form.rb
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false

@@ -1,0 +1,12 @@
+<h1><%= @task.name %></h1>
+<p><small><%= @task.created_at.in_time_zone("Moscow").strftime('%H:%M %d.%m.%Y') %></small></p>
+<% if @task.description %>
+<p>Description: <%= @task.description %></p>
+<% end %>
+<p>Status: <%= @task.status %></p>
+<p>Creator: <%= @task.creator %></p>
+<p>Completed?: <%= @task.completed %></p>
+
+<%= link_to 'Edit', edit_task_path(@task) %>
+<%= link_to 'Delete', task_path(@task), method: :delete, data: { confirm: 'Sure delete?'} %>
+<%= link_to 'Back', tasks_path %>

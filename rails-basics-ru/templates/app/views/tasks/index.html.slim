@@ -1,0 +1,5 @@
+h1 Tasks list
+= link_to 'Add task', new_task_path
+- @tasks.each do |task|
+  p= link_to task.name, task_path(task)
+  small: i #{task.creator}, #{task.created_at.in_time_zone('Moscow').strftime('%H:%M %d.%m.%Y')}
